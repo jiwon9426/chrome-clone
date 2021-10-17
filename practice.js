@@ -14,9 +14,21 @@ dayOfWeek.push("sun"); //array에 추가하는 방법
 const player = {
   name: "niko",
   age: 22,
-  fat: False,
 };
 player.lastname = "park"; //object에 추가하는 방법
 
 console.log(player);
 console.log(player.name); //object의 값을 get하는 방법
+
+//함수
+function 함수이름() {} //형태로 만듦. 값을 함수밖에서도 사용하고 싶다면 return 해줘야함.
+함수이름(); //형태로 실행함.
+
+//object 안에서 함수를 선언할수도 있음.
+const player2 = {
+  name: "nico",
+  sayHello: function (otherName) {
+    console.log("hello" + otherName + "!");
+  },
+};
+player2.sayHello("jiwon");

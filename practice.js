@@ -53,3 +53,16 @@ title.addEventListener("click", clicked); //function은 ()을 쓰지X, 일단은
 
 //방법2))
 title.onclick = clicked;
+
+//자바스크립트와 css를 연결할때 classname 으로 설정함. 그때 classList.contains()/remove/add 사용함.
+const h1 = document.querySelector("h1");
+function clinckedTitle() {
+  if (h1.classList.contains("clicked")) {
+    h1.classList.remove("clicked");
+  } else {
+    h1.classList.add("clicked");
+  }
+  //이러한 다섯줄은 h1.classList.toggle("clicked"); 라는 한줄로 대체될 수 있음. classList.toggle !! 유용함.
+}
+
+h1.addEventListener("click", clinckedTitle);

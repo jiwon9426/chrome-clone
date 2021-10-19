@@ -1,3 +1,51 @@
 .hidden {
   display: none;
 }
+
+img {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 80%;
+  z-index: -1;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#middle {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login-form {
+  font-size: 30px;
+}
+
+#todo-form input {
+  font-size: 25px;
+}
+
+#todo-list {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+#quote {
+  position: fixed;
+  bottom: 50px;
+  font-weight: 600;
+}
